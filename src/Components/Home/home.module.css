@@ -233,6 +233,13 @@
    background-color: #276625 ;
 }
 
+
+
+/* Post Contact Section */
+.postContact {
+   background-color:#f0f0f0 ;
+}
+
 /*Start Media Screen */
 /* Mobil Screen */
 @media (max-width: 767px) {

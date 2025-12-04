@@ -338,6 +338,8 @@ export default function Home() {
                </div>
             </div>
          </section>
+
+         <section className={`${style.postContact} py-5`}></section>
       </Fragment>
    );
 }
