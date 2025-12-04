@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+   --main-color:#50874d;
+   --second-color: #feae35;
+   --btnHover-color: #05b8b8;
+   --primary-color: rgb(73, 122, 246);
+   --third-color: rgb(52, 123, 216);
+   --main-transition: 0.4s ease;
+
+   /* Font Size */
+   --fs-h1: clamp(1rem, 5vw, 3.5rem);
+   --fs-h2: clamp(1.5rem, 3vw, 2.5rem);
+   --fs-p: clamp(1rem, 2vw, 1.2rem);
+   --fs-li: clamp(0.8rem, 1.1vw, 1.4rem);
+}
+
+
+
+
+/*&==========Start Global Rules ===========*/
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   font-family: "Montserrat", sans-serif;
+}
+ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+a{
+   text-decoration: none !important;
+   color: white;
+}
+/* Font Size */
+h1 {
+   font-size: var(--fs-h1);
+}
+h2 {
+   font-size: var(--fs-h2);
+}
+p, span{
+   font-size: var(--fs-p);
+}
+li {
+   font-size: var(--fs-li);
+}
+/* General Elements Display Animation */
+.cardAnimation {
+   opacity: 0;
+   transform: translateY(60px);
+   transition: .6s ease;
+   -webkit-transform: translateY(60px);
+   -moz-transform: translateY(60px);
+   -ms-transform: translateY(60px);
+   -o-transform: translateY(60px);
+}
+.showAnimation {
+   animation: fadeUp 1.8s ease forwards;
+   -webkit-animation: fadeUp 1.8s ease forwards;
+}
+@keyframes fadeUp {
+   0% {
+      opacity: 0;
+      transform: translateY(60px);
+      -webkit-transform: translateY(60px);
+      -moz-transform: translateY(60px);
+      -ms-transform: translateY(60px);
+      -o-transform: translateY(60px);
+}
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+
+
+
+.main-color {
+   color:var(--main-color) !important ;
+}
+.bg-main {
+   background-color:var(--main-color) !important;
+}
+
+
+
+/*&==========Ens Global Rules  ===========*/
+/*Start Media Screen */
+                     /* Mobil Screen */
+@media (max-width: 767px) {
+}
+                     /* Small Screen */
+@media (min-width: 768px) {
+}
+                     /* Medium Screen */
+@media (min-width:992px){
+}
+                     /* Large Screen */
+@media (min-width:1200px){
+}
+/*End Media Screen */
