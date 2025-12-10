@@ -4,7 +4,7 @@ import style from "./header.module.css" ;
 import TypingEffect from '../TypingEffect/TypingEffect.jsx';
 
 
-export default function Header() {
+export default function Header({title , typing , subTitle , backgroundURL , color , titleColor , linksColor}) {
    const [displayScrollNavbar, setDisplayScrollNavbar] = useState(false);
    const [isOpen, setIsOpen] = useState(false);
    const [displayScrollBtn, setDisplayScrollBtn] = useState(false);
@@ -27,96 +27,67 @@ export default function Header() {
       return () => window.removeEventListener("scroll", handleScroll);
    }, []);
 
-
    return (
       <Fragment>
          <section className={`${style.sectionHeader} position-relative`}>
 
             {/* Navbar Links */}
-            <nav className={`${style.header} `}>
+            <nav className={`${style.header}`} style={backgroundURL} >
 
                {/* Navbar Links */}
-               <div className={`${style.links} ${displayScrollNavbar ? style.linksActive : ""}  fixed-top`}>
+               <div className={`${style.links} ${displayScrollNavbar ? `${style.linksActive} ${linksColor} ${color? "bg-black":"text-white"} `: ""}  fixed-top`}>
 
                   {/* Navbar Btn Mobile Screen */}
-                  <button className={`${style.menuBtn}  ${isOpen?style.active: ""} position-absolute btn d-none`} onClick={() => {setIsOpen(!isOpen)}}>
-                     <span className={`${style.menuIcon}`}></span>
+                  <button className={`${style.menuBtn}  ${isOpen?`${style.active}`: ""} position-absolute btn d-none`} onClick={() => {setIsOpen(!isOpen)}}>
+                     <i className={`fa-solid fa-bars text-black fs-4 ${color}`}></i>
                   </button>
-                  <div className={`${style.mobileLink} ${isOpen?"":"d-none"} text-center p-3 bg-white position-absolute w-100 top-0 start-0`}>
+                  <div className={`${style.mobileLink} ${isOpen?"":"d-none"} text-center p-3  ${isOpen?"bg-black":"bg-white"}   position-absolute w-100 top-0 start-0`}>
                      <ul >
-                        <li className="my-3"><NavLink className={({isActive}) => `text-black ${isActive ? ' fw-bold':''}`} to="/">Home</NavLink></li>
-                        <li className="my-3"><NavLink className={({isActive}) => `text-black ${isActive ? ' fw-bold':''}`} to="/about">About</NavLink></li>
-                        <li className="my-3"><NavLink className={({isActive}) => `text-black ${isActive ? ' fw-bold':''}`} to="/projects">Projects</NavLink></li>
-                        <li className="my-3"><NavLink className={({isActive}) => `text-black ${isActive ? ' fw-bold':''}`} to="/testimonials">Testimonials</NavLink></li>
+                        <li className="my-3"><NavLink className={({isActive}) => `${isOpen?"text-white":"text-black"}  ${isActive ? ' fw-bold':''}`} to="/">Home</NavLink></li>
+                        <li className="my-3"><NavLink className={({isActive}) => `${isOpen?"text-white":"text-black"}  ${isActive ? ' fw-bold':''}`} to="/projects">Projects</NavLink></li>
+                        <li className="my-3"><NavLink className={({isActive}) => `${isOpen?"text-white":"text-black"}  ${isActive ? ' fw-bold':''}`} to="/Contact">Contact</NavLink></li>
                      </ul>
                   </div>
 
 
                   {/* Navbar Large Screen */}
                   <ul className={`${style.largeScreenLinks} d-flex justify-content-end align-items-center`}>
-                     <li className="mx-2"><NavLink className={({isActive}) => `${style.link} ${isActive ? ' fw-bold':''}`} to="/">Home</NavLink></li>
-                     <li className="mx-2"><NavLink className={({isActive}) => `${style.link} ${isActive ? ' fw-bold':''}`} to="/about">About</NavLink></li>
-                     <li className="mx-2"><NavLink className={({isActive}) => `${style.link} ${isActive ? ' fw-bold':''}`} to="/projects">Projects</NavLink></li>
-                     <li className="mx-2"><NavLink className={({isActive}) => `${style.link} ${isActive ? ' fw-bold':''}`} to="/testimonials">Testimonials</NavLink></li>
+                     <li className="mx-2"><NavLink className={({isActive}) => `text-black ${color} ${style.link} ${isActive ? ' fw-bold':''}`} to="/">Home</NavLink></li>
+                     <li className="mx-2"><NavLink className={({isActive}) => `text-black ${color} ${style.link} ${isActive ? ' fw-bold':''}`} to="/projects">Projects</NavLink></li>
+                     <li className="mx-2"><NavLink className={({isActive}) => `text-black ${color} ${style.link} ${isActive ? ' fw-bold':''}`} to="/Contact">Contact</NavLink></li>
                   </ul>
                </div>
 
                   {/* Header Information */}
-               <div className='d-flex justify-content-center align-items-center w-100 h-100 text-center'>
-                  <div className=''>
-                     <h1 className={`fw-bold mb-0 ${style.title}`}>Mahmoud Othman</h1>
-                     {/* <p className='mt-0'>Full Stack Developer</p> */}
-                           <TypingEffect texts={["MERN Stack Developer","Front-End Developer | UI/UX & React.js", "Back-End Developer | Node.js & Architecture","Database Management | MongoDB"]} speed={100} delay={3000} />
+               <div className='d-flex justify-content-center align-items-center w-100 h-100 text-center '>
+                  <div className='text-muted '>
+                     <h1 className={`fw-bold mb-0 ${titleColor}  ${style.title}`}>{title}</h1>
+                     {subTitle?<p className={`text-center small ${color}`}>{subTitle}</p>:""}
+                     {typing?<TypingEffect texts={typing} speed={100} delay={3000} />:""}
                   </div>
                </div>
             </nav>
 
 
             {/* Button Top Level */}
-            <div className={`${style.scrollDiv} text-end  fixed-bottom`}>
+            <div className={`${style.scrollDiv} d-flex justify-content-between align-items-center fixed-bottom`}>
+               <Link  to={`https://wa.me/201126999142`} className={`btn mb-1`}>
+                  <img src="/WhatsApp.png" alt="" className={`${style.whatsApp}`} />
+               </Link>
                <button onClick={scrollToTop} className={` ${style.scrollBtn}   ${displayScrollBtn ? "" : " d-none"} btn m-3 rounded-0`}>
-                  <i className="fa-solid fa-chevron-up"></i>
+                  <i className="fa-solid fa-chevron-up "></i>
                </button>
             </div>
 
 
             {/* WhatsApp */}
-            <div className="text-start  fixed-bottom">
+            {/* <div className="text-start  fixed-bottom">
                <Link  to={`https://wa.me/201126999142`} className={`btn m-2`}>
                   <img src="/WhatsApp.png" alt="" className={`${style.whatsApp}`} />
                </Link>
-            </div>
+            </div> */}
 
          </section>
       </Fragment>
-
-
-
-      // <div className="container-fluid">
-      //    <nav className={`${style.header}`}>
-               // <button className={`${style.menuBtn}`} type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-               //    <span className={`${style.menuIcon}`}></span>
-               // </button>
-
-               // <button  className={`${style.menuBtn} ${isOpen ? "active" : ""}`} 
-               //       onClick={() => setIsOpen(!isOpen)}
-               //       type="button"
-               //       data-bs-toggle="collapse"
-               //       data-bs-target="#navMenu"
-               //    >
-               //    <span className="menu-icon"></span>
-               // </button>
-
-      //          <div className="">
-      //             <ul className={`${style.link}`}>
-      //                <li className=""><NavLink className={({isActive}) => `nav-link ${isActive ? 'active fw-bold':''}`} to="/">Home</NavLink></li>
-      //                <li className=""><NavLink className={({isActive}) => `nav-link ${isActive ? 'active fw-bold':''}`} to="/about">About</NavLink></li>
-      //                <li className=""><NavLink className={({isActive}) => `nav-link ${isActive ? 'active fw-bold':''}`} to="/projects">Projects</NavLink></li>
-      //                <li className=""><NavLink className={({isActive}) => `nav-link ${isActive ? 'active fw-bold':''}`} to="/testimonials">Testimonials</NavLink></li>
-      //                <li className=" ms-3"><a className="btn btn-primary" href="mailto:mahmoud@example.com">Whats App</a></li>
-      //             </ul>
-      //          </div>
-      //    </nav>
-      // </div>
    );
 }

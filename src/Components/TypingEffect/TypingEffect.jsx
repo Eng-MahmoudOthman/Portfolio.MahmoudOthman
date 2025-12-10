@@ -10,19 +10,19 @@ export default function TypingEffect({ texts, speed = 100, delay = 1500 }){
       useEffect(() => {
          if (subIndex < texts[index].length) {
             const timeout = setTimeout(() => {
-            setSubIndex(subIndex + 1);
+               setSubIndex(subIndex + 1);
             }, speed);
             return () => clearTimeout(timeout);
          } else {
             const timeout = setTimeout(() => {
-            setSubIndex(0);
-            setIndex((prev) => (prev + 1) % texts.length);
+               setSubIndex(0);
+               setIndex((prev) => (prev + 1) % texts.length);
             }, delay);
             return () => clearTimeout(timeout);
          }
       }, [subIndex, index, texts, speed, delay]);
 
-      // كرسر يبرق
+      // Cursor | :
       useEffect(() => {
          const interval = setInterval(() => {
             setBlink((prev) => !prev);

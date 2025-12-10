@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Link} from 'react-router-dom';
 import style from "./contactUs.module.css";
+import Header from '../Header/Header.jsx';
 
 
 
@@ -8,24 +9,8 @@ import style from "./contactUs.module.css";
 export default function ContactUs() {
    return (
       <Fragment>
+         <Header title={"Projects"} titleColor={"text-white"} subTitle={"Welcome to explore my Contact Me"} backgroundURL={{backgroundImage: `url("/contact.jpg")`}} color={"text-white"}/>
          <div className='container position-relative'>
-            <section className='fixed-top'>
-               <div className="text-center my-3">
-                  <Link to="/" className={`btn ${style.btnBack}`}>
-                     <i className="fas fa-arrow-right"></i>
-                     رجوع إلى تسجيل الدخول
-                  </Link>
-               </div>
-            </section>
-
-            <section className={`${style.fixedBottom}`}>
-               <div className="text-center my-3">
-                  <Link to={`https://wa.me/201126999142`} className={`btn`}>
-                     <img src="/WhatsApp.png" className='w-100' alt="WhatsApp" srcset="" />
-                  </Link>
-               </div>
-            </section>
-
             <section>
                <div className={`${style.aboutContainer}`}>
                <h2>من نحن</h2>

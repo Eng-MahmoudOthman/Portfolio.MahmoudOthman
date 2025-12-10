@@ -12,7 +12,7 @@ export default function Layout(){
    
    return (
       <Fragment>
-         <Header/>
+         {/* <Header/> */}
             <Outlet></Outlet>
          {!shouldHideFooter && <Footer />}
       </Fragment>

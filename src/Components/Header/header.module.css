@@ -1,14 +1,12 @@
 
 
 .header {
-   height: 300px;
+   height: 290px;
    background-image: url("../../../public/backGroundHeader.jpg");
    background-position: center right;
    background-size: cover;
    /* background-attachment: fixed; */
 }
-
-
 .links {
    background-color: transparent;
    padding: 15px;
@@ -22,7 +20,7 @@
    -o-transition: var(--main-transition);
 }
 .linksActive {
-   background-color: #f0f0f0;
+   /* background-color: #f0f0f0; */
    color: white !important;
    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -38,6 +36,7 @@
    color: rgb(156, 154, 154) !important;
 }
 .scrollDiv {
+   bottom: 10px !important;
    z-index: 9999;
 }
 .scrollBtn {
@@ -76,7 +75,7 @@
    cursor: pointer;
    z-index: 9999 ;
 }
-.menuIcon,
+/* .menuIcon,
 .menuIcon::before,
 .menuIcon::after {
    content: "";
@@ -95,7 +94,7 @@
 .menuIcon::after {
    position: absolute;
    top: 8px;
-}
+} */
 .mobileLink {
    height: 220px;
 }
@@ -110,7 +109,6 @@
    top: 0;
    transform: rotate(-45deg);
 }
-
 
 
 

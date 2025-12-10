@@ -4,14 +4,23 @@ import style from "./home.module.css"
 import CustomTitle from '../CustomTitle/CustomTitle.jsx';
 import useAnimation from '../../Hooks/useAnimation.js';
 import Counter from '../Counter/Counter.jsx';
+import Header from '../Header/Header.jsx';
 
 export default function Home() {
    const navigate = useNavigate();
    useAnimation(".cardAnimation ", "showAnimation");
    useAnimation(".titleAnimation " , style.fadeUp);
+   const title = "Mahmoud Othman" ;
+   const typing = [
+      "MERN Stack Developer" ,
+      "Front-End Developer | UI/UX & React.js" , 
+      "Back-End Developer | Node.js & Architecture" ,
+      "Database Management | MongoDB"
+   ] ;
 
    return (
       <Fragment>
+         <Header typing={typing} title={title} color={"text-black"} colorBtnHome={"text-muted"} linksColor={"bg-white"} />
          <section className={`${style.home} cardAnimation`} >
             <CustomTitle title="Main" />
             <div className="container">
@@ -58,7 +67,7 @@ export default function Home() {
          <section className={`${style.portfolio}`}>
             <div className='container'>
                   <div className="text-center">
-                     <h3 className="fw-bold titleAnimation">Portfolio</h3>
+                     <h3 className="fw-bold titleAnimation text-muted">Portfolio</h3>
                      <p className="text-muted small titleAnimation">for the love of white</p>
                   </div>
 
@@ -116,7 +125,7 @@ export default function Home() {
          <section className={`${style.services}`}>
             <div className='container'>
                <div className={`text-center ${style.fadeUp}`}>
-                  <h3 className='fw-bold titleAnimation'>Services</h3>
+                  <h3 className='fw-bold titleAnimation text-muted'>Services</h3>
                   <p className="text-muted small titleAnimation">all services include a deep love to the job</p>
                </div>
 
@@ -328,11 +337,11 @@ export default function Home() {
 
          <section className={`${style.contact} py-5`}>
             <div className="container my-5 py-5">
-               <div className='row justify-content-evenly align-items-center px-5'>
-                  <div className="col-md-8">
-                     <p className='p-0 m-0 h3 fw-bold'>You already know about me, now let me know about you. Contact me and get quality services!</p>
+               <div className='d-flex justify-content-evenly align-items-center px-5  flex-column flex-md-row '>
+                  <div className="text-center text-lg-start w-100 w-md-auto mx-0 mx-md-5 px-0 px-md-5">
+                     <p className='p-0 m-0 h3 fw-bold text-muted'>You already know about me, now let me know about you. Contact me and get quality services!</p>
                   </div>
-                  <div className="col-md-4 text-end">
+                  <div className="text-end my-4">
                      <Link className={`${style.linkContent} btn text-white py-2 px-4 rounded-0`}>CONTACT</Link>
                   </div>
                </div>

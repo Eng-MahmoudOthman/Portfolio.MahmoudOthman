@@ -1,0 +1,107 @@
+
+/* All Title Display Animation */
+.fadeUp {
+   opacity: 0;
+   transform: translateX(-40px);
+   animation: fadeUp 3.6s ease forwards;
+   -webkit-animation: fadeUp 3.6s ease forwards;
+   -webkit-transform: translateX(-40px);
+   -moz-transform: translateX(-40px);
+   -ms-transform: translateX(-40px);
+   -o-transform: translateX(-40px);
+}
+@keyframes fadeUp {
+   0% {
+      opacity: 0;
+      transform: translateX(-40px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+}
+
+
+
+
+
+/* Home Section */
+.Photography ,
+.Graphic ,
+.Branding {
+   padding: 50px  0px;
+}
+
+
+.Photography {
+   background-color:#f0f0f0 ;
+}
+.Graphic {
+   background-color:white ;
+}
+.Branding {
+   background-color:#f0f0f0 ;
+}
+
+
+
+
+
+
+
+
+/* Portfolio Section */
+.image{
+   transition: var(--main-transition);
+   -webkit-transition: var(--main-transition);
+   -moz-transition: var(--main-transition);
+   -ms-transition: var(--main-transition);
+   -o-transition: var(--main-transition);
+}
+.image:hover {
+   scale: 1.1;
+   rotate: 5deg;
+}
+
+
+
+/* Contact Section */
+.Contact {
+   height: 300px;
+   position: relative;
+   letter-spacing: -3px;
+}
+.Contact::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image:  url("../../../public/backContact.jpg");
+   background-size: cover;
+   background-position: center ;
+   background-attachment: fixed;
+   opacity: 20%;
+   z-index: -1 ; 
+}
+
+
+
+
+
+
+/*Start Media Screen */
+/* Mobil Screen */
+@media (max-width: 767px) {
+}
+                     /* Small Screen */
+@media (min-width: 768px) {
+}
+                     /* Medium Screen */
+@media (min-width:992px){
+}
+                     /* Large Screen */
+@media (min-width:1200px){
+}
+/*End Media Screen */

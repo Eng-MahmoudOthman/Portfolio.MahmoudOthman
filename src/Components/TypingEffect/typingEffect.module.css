@@ -1,5 +1,7 @@
 .typingEffect {
    white-space: nowrap;
+   font-size: 14px;
+   /* font-size: 12px; */
 }
 
 .cursor {
@@ -20,3 +22,28 @@
       opacity: 0;
    }
 }
+
+
+
+
+
+/*&==========Ens Global Rules  ===========*/
+/*Start Media Screen */
+                     /* Mobil Screen */
+@media (max-width: 767px) {
+   .typingEffect {
+      font-size: 12px;
+      width: 80%;
+      margin: 0px auto;
+   }
+}
+                     /* Small Screen */
+@media (min-width: 768px) {
+}
+                     /* Medium Screen */
+@media (min-width:992px){
+}
+                     /* Large Screen */
+@media (min-width:1200px){
+}
+/*End Media Screen */
