@@ -18,7 +18,7 @@ export default function Footer() {
                <div className="col-md-6 ">
                   <div className={`${style.footer}`}>
                      <div className="d-flex justify-content-center align-item-center justify-content-md-end">
-                           <Link target="_blank" to="/">
+                           <Link target="_blank" to="/"  className={`${style.socialLink}`}>
                               <div className={`${style.social}`}>
                                  <svg xmlns="http://www.w3.org/2000/svg" fill='#ffffff' width="20" height="20" viewBox="0 0 32 32">
                                     <path d="M12.026 6.81v4.13H9v5.051h3.026V31h6.216V15.992h4.171s.391-2.422.58-5.07h-4.728V7.469c0-.516.678-1.21 1.348-1.21H23V1.001h-4.605c-6.523 0-6.369 5.055-6.369 5.81z"></path>

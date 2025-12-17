@@ -14,7 +14,7 @@ export default function Header({title , typing , subTitle , backgroundURL , colo
       window.scrollTo({
          top: 0,
          behavior: 'smooth'
-         });
+      });
    };
 
 

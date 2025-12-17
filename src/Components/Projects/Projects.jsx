@@ -1,15 +1,21 @@
-import React, { Fragment } from 'react';
+import React, { Fragment , useEffect } from 'react';
 import CustomTitle from '../CustomTitle/CustomTitle.jsx';
 import Header from '../Header/Header.jsx';
 import style from "./projects.module.css"
 import useAnimation from '../../Hooks/useAnimation.js';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function Projects() {
-   const navigate = useNavigate();
    useAnimation(".cardAnimation ", "showAnimation");
    useAnimation(".titleAnimation " , style.fadeUp);
+
+   useEffect(() => {
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      });
+   }, [])
 
    return (
       <Fragment>
@@ -29,11 +35,13 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <div className="col-md-12 ">
-                                 <div className='overflow-hidden rounded'>
-                                    <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                                 <div className="col-md-12 ">
+                                    <div className='overflow-hidden rounded'>
+                                       <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                                    </div>
                                  </div>
-                              </div>
+                              </Link>
                               <div className="col-md-12"  >
                                  <div className='overflow-hidden rounded'>
                                     <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
@@ -56,7 +64,6 @@ export default function Projects() {
                               </div>
                            </div>
                         </div>
-
 
                         <div className="col-md-4">
                            <div  className="row g-4">
@@ -213,7 +220,7 @@ export default function Projects() {
                <div className='container '>
                   <div className="text-center">
                      <h2 className="fw-bold text-muted">Hire Me</h2>
-                     <button className={`btn rounded-0 text-white bg-main px-4 py-2 ${style.btnContact}`}>Contact</button>
+                     <Link to="/Contact"><button className={`btn rounded-0 text-white bg-main px-4 py-2 ${style.btnContact}`}>Contact</button></Link>
                   </div>
                </div>
             </section>

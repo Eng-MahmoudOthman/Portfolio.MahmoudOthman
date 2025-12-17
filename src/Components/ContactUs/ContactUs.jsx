@@ -1,230 +1,173 @@
-import { Fragment } from 'react';
-import { Link} from 'react-router-dom';
+// import { Fragment } from 'react';
+// import { Link} from 'react-router-dom';
+// import style from "./contactUs.module.css";
+// import Header from '../Header/Header.jsx';
+
+
+
+
+// export default function ContactUs() {
+//    return (
+//       <Fragment>
+//          <Header title={"Contact Me"} titleColor={"text-white"} subTitle={"Welcome to explore my Contact Me"} backgroundURL={{backgroundImage: `url("/backgroundHeaderContact.jpg")`}} color={"text-white"}/>
+//             <section className={`${style.contact} py-5  position-relative`}>
+//                <div className="text-center">
+//                   <h3 className="fw-bold titleAnimation text-muted">Contact Me</h3>
+//                   <p className="text-muted small titleAnimation">
+//                      Welcome to explore my Contact Me.
+//                   </p>
+//                </div>
+
+//                <div className='container d-flex justify-content-center align-item-center my-4 '>
+//                      <form className={`${style.form} my-4 pb-5 pt-2`}>
+//                         <input type="text" placeholder='Enter Your Name' name='name' className='form-control rounded-0 px-4 py-2  my-3' />
+//                         <input type="email" placeholder='Enter Your Email' name='email' className='form-control rounded-0 px-4 py-2  my-3' />
+//                         <textarea name="message" placeholder='Enter Your Message' rows={10} className='form-control rounded-0 px-4 py-2  my-3' ></textarea>
+//                         <div className='text-center my-3'>
+//                            <button className={`${style.btnSend} btn text-white rounded-0`}>SEND</button>
+//                            {/* <button className={`${style.btnSend}   border-0 outline-0 text-white rounded-0`}>SEND</button> */}
+//                         </div>
+//                      </form>
+//                </div>
+//             </section>
+//       </Fragment>
+//    )
+// }
+
+
+
+import { Fragment, useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 import style from "./contactUs.module.css";
 import Header from '../Header/Header.jsx';
-
-
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 export default function ContactUs() {
+
+   const[loading , setLoading] = useState(false) ;
+   async function sendData(values, { resetForm }){
+      setLoading(true) ;
+      await axios.post("https://store-alborglab-app-back-end.vercel.app/api/v1/users/portfolio" , values)
+      .then(({data})=>{
+         toast.success(data.message);
+         resetForm()
+         setLoading(false) ;
+      })
+      .catch((error)=>{
+         setLoading(false) ;
+         toast.error(error.response.data.message);
+      })
+         
+   }
+   // إعداد Formik
+   const formik = useFormik({
+      initialValues: {
+         name: '',
+         phone: '',
+         email: '',
+         message: '',
+      },
+      validationSchema: Yup.object({
+         name: Yup.string().required('Name is required'),
+         phone: Yup.string().required('Phone is required'),
+         email: Yup.string().email('Invalid email').required('Email is required'),
+         message: Yup.string().required('Message is required'),
+      }),
+      onSubmit: sendData 
+   });
+
    return (
       <Fragment>
-         <Header title={"Projects"} titleColor={"text-white"} subTitle={"Welcome to explore my Contact Me"} backgroundURL={{backgroundImage: `url("/contact.jpg")`}} color={"text-white"}/>
-         <div className='container position-relative'>
-            <section>
-               <div className={`${style.aboutContainer}`}>
-               <h2>من نحن</h2>
-
-               <p>
-                  نحن فريق من <strong>الكيميائيين العاملين بفرع برج العياط</strong>، جمعنا هدف واحد:
-                  <br />
-                  <strong>تبسيط شغلنا اليومي، وترتيبه، وتحسين التجربة العملية لكل زميل بيستخدم النظام.</strong>
+         <ToastContainer/>
+         <Header 
+            title={"Contact Me"} 
+            titleColor={"text-white"} 
+            subTitle={"Welcome to explore my Contact Me"} 
+            backgroundURL={{backgroundImage: `url("/backgroundHeaderContact.jpg")`}} 
+            color={"text-white"}
+         />
+         <section className={`${style.contact} position-relative `}>
+            <div className="text-center">
+               <h3 className="fw-bold titleAnimation text-muted">Contact Me</h3>
+               <p className="text-muted small titleAnimation">
+                  Welcome to explore my Contact Me.
                </p>
+            </div>
 
-               <p>
-                  بدأت الفكرة من احتياج حقيقي داخل الشغل:
-               </p>
+            <div className='container d-flex justify-content-center align-items-center my-4'>
+               <form 
+                  className={`${style.form} my-4 pb-5 pt-2 `} 
+                  onSubmit={formik.handleSubmit}
+               >
+                  <input 
+                     type="text" 
+                     name="name" 
+                     placeholder='Enter Your Name' 
+                     className='form-control rounded-0 px-4 py-2 my-3' 
+                     value={formik.values.name} 
+                     onChange={formik.handleChange} 
+                     onBlur={formik.handleBlur}
+                  />
+                  {formik.touched.name && formik.errors.name ? (
+                     <div className="text-danger small">{formik.errors.name}</div>
+                  ) : null}
 
-               <ul>
-                  <li className='p-0 m-0 '>🧪  تنظيم البيانات </li>
-                  <li className='p-0 m-0'>🧪  متابعة المخزون</li>
-                  <li className='p-0 m-0'>🧪  متابعة منتهية الصلاحية</li>
-                  <li className='p-0 m-0'>🧪  ضبط الاستهلاك</li>
-                  <li className='p-0 m-0'>🧪  سهولة جرد المخزن</li>
-                  <li className='p-0 m-0'>🧪  طباعة تقارير للجرد والاستهلاك والطلبية </li>
-                  <li className='p-0 m-0'>🧪  تسهيل التواصل بين الفريق</li>
-               </ul>
+                  <input 
+                     type="string" 
+                     name="phone" 
+                     placeholder='Enter Your Phone' 
+                     className='form-control rounded-0 px-4 py-2 my-3' 
+                     value={formik.values.phone} 
+                     onChange={formik.handleChange} 
+                     onBlur={formik.handleBlur}
+                  />
+                  {formik.touched.phone && formik.errors.phone ? (
+                     <div className="text-danger small">{formik.errors.phone}</div>
+                  ) : null}
 
-               <p className='p-0 m-0'>
-                  ومن هنا قررنا نطوّر أداة تساعدنا وتساعد زمايلنا، بأسلوب عملي وبسيط يناسب طبيعة
-                  شغل المعامل والمخازن والفروع.
-               </p>
+                  <input 
+                     type="email" 
+                     name="email" 
+                     placeholder='Enter Your Email' 
+                     className='form-control rounded-0 px-4 py-2 my-3' 
+                     value={formik.values.email} 
+                     onChange={formik.handleChange} 
+                     onBlur={formik.handleBlur}
+                  />
+                  {formik.touched.email && formik.errors.email ? (
+                     <div className="text-danger small">{formik.errors.email}</div>
+                  ) : null}
 
-               <p>
-                  اشتغلنا على النظام <strong>بروح فريق واحد</strong> وبطريقة واضحة من غير تعقيد،
-                  علشان أي حد يستخدم المنصة يحس إن شغله بقى:
-                  <br />
-                  <strong>أسهل – أسرع – أوضح.</strong>
-               </p>
+                  <textarea 
+                     name="message" 
+                     placeholder='Enter Your Message' 
+                     rows={10} 
+                     className='form-control rounded-0 px-4 py-2 my-3' 
+                     value={formik.values.message} 
+                     onChange={formik.handleChange} 
+                     onBlur={formik.handleBlur}
+                  ></textarea>
+                  {formik.touched.message && formik.errors.message ? (
+                     <div className="text-danger small">{formik.errors.message}</div>
+                  ) : null}
 
-               <p>
-                  إحنا <strong>مش شركة برمجيات</strong>، ومش خارجين عن سياسات المكان.
-                  <br />
-                  إحنا فريق عمل حابب يطوّر الأدوات اللي بيستخدمها، ويقدّم حاجة مفيدة لنفسه
-                  وللزمايله— <strong>بسلاسة، وباحترام كامل لطبيعة الشغل وبدون أي تدخل في القرارات الإدارية أو التشغيلية.</strong>
-               </p>
-
-               <p>
-                  ونشتغل دايمًا إن النظام يفضل:
-                  <br />
-                  <strong>واضح – محترم – داعم لشغلنا الحقيقي داخل الفرع.</strong>
-               </p>
-               <p>
-                  بداية إنشاء المشروع:
-                  <br />
-                  <strong>تم إنشاء هذا العمل من الفترة 1-1-2024 الى الفترة  1-1-2025 <br/> تحت  إشراف مديرة أقليم القاهرة الكبرى الدكتورة : <strong> سوزان شاكر صموئيل  </strong>   <br/> وتحت الاشراف المباشر من الدكتور :<strong>عماد الدين على محمد </strong>  مدير منطقة الهرم والقائم  بأعمال مدير فرع العياط فى هذة الفترة  </strong>            
-               </p>
-
-
-               <p className={`${style.footerText}`}>
-                  وبنرحّب بأي اقتراح أو فكرة تساعدنا نطوّره للأفضل.
-               </p>
-               </div>
-            </section>
-
-            <section className={`${style.systemSection} container`}>
-               <h2 className={`${style.title}`}>ما الذي يقدمه لنا النظام؟</h2>
-               <p className={`${style.intro}`}>
-                  النظام اتعمل علشان يسهّل شغلنا ويخلّي يومنا في الفرع ماشي بسلاسة ومن غير لخبطة،
-                  وبيوفر لنا مجموعة أدوات عملية بنستخدمها يوميًا، أهمها:
-               </p>
-
-               <div className={`${style.featuresGrid}`}>
-
-                  {/* <!-- Organizing Data --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-database ${style.iconSystem}`}></i>
-                     <h3>تنظيم البيانات</h3>
-                     <p>تجميع كل البيانات المهمة في مكان واحد والوصول السريع ليها.</p>
+                  <div className='text-center my-3'>
+                     {loading?
+                        <button className={`${style.btnSend} btn text-white rounded-0`}>
+                           <span className="spinner-border spinner-border-sm"></span>
+                        </button>
+                     :
+                        <button type="submit" className={`${style.btnSend} btn text-white rounded-0`}>
+                           SEND
+                        </button>
+                     }
                   </div>
-
-                  {/* <!-- Inventory Tracking --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-warehouse ${style.iconSystem}`}></i>
-                     <h3>متابعة المخزون</h3>
-                     <p>معرفة المتاح، الناقص، والمستهلك بطريقة واضحة وسهلة.</p>
-                  </div>
-
-                  {/* <!-- Usage Management --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-file-invoice ${style.iconSystem}`}></i>
-                     <h3>إدارة الاستهلاك</h3>
-                     <p>تسجيل الاستهلاك اليومي أو الشهري والرجوع ليه في أي وقت.</p>
-                  </div>
-
-                  {/* <!-- Product Movement --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-arrows-spin ${style.iconSystem}`}></i>
-                     <h3>متابعة حركة الأصناف</h3>
-                     <p>تتبع الصنف من لحظة دخوله للفرع لحد استخدامه.</p>
-                  </div>
-
-                  {/* <!-- Reduce Errors --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-shield-halved ${style.iconSystem}`}></i>
-                     <h3>تقليل الأخطاء البشرية</h3>
-                     <p>معلومات واضحة ومنظمة تقلل نسب الخطأ مقارنة بالشغل اليدوي.</p>
-                  </div>
-
-                  {/* <!-- Team Communication --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-people-group ${style.iconSystem}`}></i>
-                     <h3>تسهيل التواصل داخل الفريق</h3>
-                     <p>عرض آخر التحديثات وتوضيح المهام بدون لخبطة.</p>
-                  </div>
-
-                  {/* <!-- Speed --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-bolt ${style.iconSystem}`}></i>
-                     <h3>سرعة في الأداء</h3>
-                     <p>خطوات أسرع بدل التدوين اليدوي والبحث المتكرر.</p>
-                  </div>
-
-                  {/* <!-- Easy UI --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-laptop-code ${style.iconSystem}`}></i>
-                     <h3>واجهة بسيطة وسهلة</h3>
-                     <p>تصميم يناسب أي مستوى خبرة في استخدام الكمبيوتر.</p>
-                  </div>
-
-                  {/* <!-- Expandable --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-layer-group ${style.iconSystem}`}></i>
-                     <h3>قابل للتطوير</h3>
-                     <p>إمكانية إضافة مميزات جديدة حسب طبيعة شغل الفرع.</p>
-                  </div>
-
-                  {/* <!-- NEW: Reports + Barcode --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-barcode ${style.iconSystem}`}></i>
-                     <h3>تقارير + باركود الأصناف</h3>
-                     <p>إصدار تقارير جرد وباركود كامل لكل صنف داخل أي طلبية.</p>
-                  </div>
-
-                  {/* <!-- NEW: Expiry Alerts --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-hourglass-end ${style.iconSystem}`}></i>
-                     <h3>تنبيه انتهاء الصلاحية</h3>
-                     <p>تنبيه أوتوماتيكي قبل انتهاء صلاحية الأصناف بشهر كامل.</p>
-                  </div>
-
-                  {/* <!-- NEW: Request & Lab Forms --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-file-lines ${style.iconSystem}`}></i>
-                     <h3>جميع النماذج اليومية</h3>
-                     <p>
-                     نماذج الطلبيات، تقارير الباثولوجي، الوراقة، طلبية الباراسيتولوجي،
-                     وكتيب الكيميائيين — كلهم في مكان واحد وسهل التحميل.
-                     </p>
-                  </div>
-
-                  {/* <!-- NEW: Transfer Reports --> */}
-                  <div className={`${style.featureBox}`}>
-                     <i className={`fa-solid fa-right-left ${style.iconSystem}`}></i>
-                     <h3>تقارير الترانسفير</h3>
-                     <p>تسجيل عمليات نقل الأصناف واستلام الأصناف المحولة بشكل منظم وواضح.</p>
-                  </div>
-               </div>
-            </section>
-
-            <section className={`${style.supportSection}`} dir='rtl'>
-               <h1>يرجى التواصل فورًا في الحالات التالية</h1>
-               <div className={`${style.cards}`}>
-
-                  <div className={`${style.card}`}>
-                     <div className={`${style.icon}`}><i className="fas fa-user-shield"></i></div>
-                     <h3>مشاكل الحساب</h3>
-                     <ul>
-                        <li>مشكلة في إنشاء حساب جديد</li>
-                        <li>مشكلة في تسجيل الدخول</li>
-                        <li>مشكلة في تفعيل الحساب</li>
-                        <li>عدم وصول كود التفعيل</li>
-                     </ul>
-                  </div>
-
-                  <div className={`${style.card}`}>
-                     <div className={`${style.icon}`}><i className="fas fa-users"></i></div>
-                     <h3>مشاكل فريق العمل</h3>
-                     <ul>
-                        <li>وجود مستخدم ضمن فريق العمل لا ينتمي للفرع</li>
-                        <li>تعديل بيانات مستخدم</li>
-                     </ul>
-                  </div>
-
-                  <div className={`${style.card}`}>
-                     <div className={`${style.icon}`}><i className="fas fa-boxes"></i></div>
-                     <h3>عمليات المخزن</h3>
-                     <ul>
-                        <li>مشاكل في الاستهلاك واستلام الطلبيات</li>
-                        <li>مشاكل التحويل واستلام الأصناف</li>
-                        <li>مشاكل تقارير الجرد</li>
-                        <li>مشكلة في استلام الطلبيات</li>
-                     </ul>
-                  </div>
-
-                  <div className={`${style.card}`}>
-                     <div className={`${style.icon}`}><i className="fas fa-chart-line"></i></div>
-                     <h3>التقارير والإضافة</h3>
-                     <ul>
-                        <li>مشاكل التقارير اليومية أو الشهرية</li>
-                        <li>إضافة فرع جديد</li>
-                        <li>إضافة صنف جديد</li>
-                        <li>أي مشكلة أخرى تتطلب تدخل فوري</li>
-                     </ul>
-                  </div>
-               </div>
-            </section>
-         </div>
+               </form>
+            </div>
+         </section>
       </Fragment>
    )
 }

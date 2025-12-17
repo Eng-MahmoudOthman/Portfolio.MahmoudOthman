@@ -3,6 +3,7 @@
 .header {
    height: 290px;
    background-image: url("../../../public/backGroundHeader.jpg");
+   /* background-position: bottom; */
    background-position: center right;
    background-size: cover;
    /* background-attachment: fixed; */

@@ -55,7 +55,7 @@
    background-color: gray !important;
 }
 .downloadBtn:hover{
-   background-color: #30562e;
+   background-color: var(--btnHover-color) ;
    color: white;
 }
 
@@ -230,7 +230,7 @@
    background-color: var(--main-color);
 }
 .linkContent:hover{
-   background-color: #276625 ;
+   background-color: var(--btnHover-color) ;
 }
 
 

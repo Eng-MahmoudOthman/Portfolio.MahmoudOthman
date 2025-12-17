@@ -5,6 +5,8 @@ import CustomTitle from '../CustomTitle/CustomTitle.jsx';
 import useAnimation from '../../Hooks/useAnimation.js';
 import Counter from '../Counter/Counter.jsx';
 import Header from '../Header/Header.jsx';
+import Swal from 'sweetalert2';
+
 
 export default function Home() {
    const navigate = useNavigate();
@@ -29,31 +31,15 @@ export default function Home() {
                      <div className='p-2'>
                         <h3 className={`fw-bold  ${style.fadeUp} my-4`}>Hi, I am Mahmoud Othman</h3>
                         <p className={`${style.info} text-muted`}>
-                           I’m Mahmoud Othman — a Full Stack Web Developer with a passion for building clean and functional web applications.
-                           I’ve been working with modern tools like React.js and Node.js for years, and I enjoy creating fast, smooth, and easy-to-use interfaces.
-                           I work as a freelancer and have built several projects using the MERN stack.
-                           Feel free to explore my work and get in touch if you'd like to collaborate.
-                           {/* I am Mahmoud Othman – a Full Stack Web Developer and UI/UX enthusiast. 
-                           Web development is my passion and I have been building interactive applications for more than 5 years. 
-                           My experience with modern technologies like React.js and Node.js shaped me into a professional developer, 
-                           and currently, I work on a freelance basis. I have developed projects using MongoDB, Express, 
-                           and many other tools in the MERN stack, 
-                           and I would be happy to know you are my next client. 
-                           Scroll down to explore my projects and get in touch. */}
-                              {/* I am Mahmoud Othman
-                              – a Full Stack Web Developer and UI/UX enthusiast. 
-                              Coding and building web applications is my passion, 
-                              and I have been working in this field for over 5 years. 
-                              My experience with modern technologies like React.js and Node.js shaped me into a versatile developer, 
-                              capable of creating both front-end interfaces and back-end systems. 
-                              I have developed projects using MongoDB, Express, and other tools in the MERN stack, 
-                              and I currently work on a freelance basis. I have collaborated with small businesses and startup projects,
-                              and I would be excited to have you as my next client. Scroll down to explore my projects and get in touch. */}
+                           Hi, I’m Mahmoud Othman, 
+                           a Full Stack Web Developer. 
+                           I specialize in building web applications using the MERN stack (MongoDB, Express, React, Node.js). 
+                           I enjoy creating clean, functional, and user-friendly interfaces. 
+                           I love solving problems and bringing ideas to life on the web.
                         </p>
                         <div className="text-center  text-md-start">
-                           <button className={`${style.downloadBtn} btn btn-sm me-2 rounded-0 py-2 px-5 my-2`} onClick={() => navigate('/projects')}>Download cv</button>
-                           <button className={`${style.moreBtn} btn btn-outline-success btn-sm me-2 rounded-0 py-2 px-5 my-2`} onClick={() => navigate('/projects')}>LEARN MORE</button>
-                           {/* <Link className={`${style.moreBtn} `} to={`https://wa.me/201126999142`} >تواصل معايا</Link> */}
+                           <a href={"/Mahmoud.pdf"} download ><button className={`${style.downloadBtn} btn btn-sm me-3 rounded-0 py-2 px-3 my-2`} >Download CV</button></a>
+                           <Link to="/projects"><button className={`${style.moreBtn} btn btn-outline-success btn-sm  rounded-0 py-2 px-3 my-2`}>LEARN MORE</button></Link>
                         </div>
                      </div>
                   </div>
@@ -136,13 +122,13 @@ export default function Home() {
                            <img src="/card1.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`} alt="title" />
                         </div>
                         <div className="card-body ">
-                           <h5 className="card-title mb-3">Commercial Photography</h5>
-                           <p className="small text-muted mb-4">Photography is what I admire most of all. 
-                              It's in my blood and it's a lifestyle. 
-                              Whether it's for commercial or individual use I will capture the best angles of the target.
+                           <h5 className="card-title mb-3">Web Applications</h5>
+                           <p className="small text-muted mb-4">
+                              I build interactive web applications with dynamic features and smooth user experience. 
+                              These include dashboards, content management systems, and business tools.
                            </p>
-                           <Link to="" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
-                              Check Portfolio <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
                            </Link>
                         </div>
                      </div>
@@ -154,14 +140,14 @@ export default function Home() {
                            <img src="/card2.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`} alt="title" />
                         </div>
                         <div className="card-body">
-                           <h5 className="card-title mb-3">Graphic Design</h5>
+                           <h5 className="card-title mb-3">Frontend Development</h5>
                            <p className="small text-muted mb-4">
-                              The worldwide digital reality made it inevitable to integrate me into this field full of creativity. 
-                              The mixture of photography and graphic art is the best way to express my most fantasy ideas. 
-                              There is still a bunch of unique ideas in my head, that needs to be realized..
+                              I create responsive and visually appealing 
+                              user interfaces using React.js, HTML, CSS, and JavaScript, 
+                              focusing on usability and performance.
                            </p>
-                           <Link to="" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
-                              Check Portfolio <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
                            </Link>
                         </div>
                      </div>
@@ -173,13 +159,68 @@ export default function Home() {
                            <img src="/card3.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
                         </div>
                         <div className="card-body">
-                           <h5 className="card-title mb-3">Branding</h5>
+                           <h5 className="card-title mb-3">Backend Development</h5>
                            <p className="small text-muted mb-4">
-                              My skills in branding is a pure example of how a hobby can grow into a profession. 
-                              Exploring your product and providing with a decision-making-shortcut is nothing but fun for me.
+                              I develop robust server-side applications and APIs, 
+                              manage databases, and ensure efficient data handling using Node.js and MongoDB.
                            </p>
-                           <Link to="" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
-                              Check Portfolio <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           </Link>
+                     </div>
+                  </div>
+                  </div>
+
+                  <div className="col-lg-6 col-xl-4">
+                     <div className={`card rounded-0 position-relative`} style={{height:500}}>
+                        <div className={`${style.imgServices} overflow-hidden`}>
+                           <img src="/card4.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                        </div>
+                        <div className="card-body">
+                           <h5 className="card-title mb-3">Full Stack Projects</h5>
+                           <p className="small text-muted mb-4">
+                              I combine frontend and backend expertise to deliver
+                              complete web solutions using the MERN stack, from user interfaces to server logic.
+                           </p>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           </Link>
+                     </div>
+                  </div>
+                  </div>
+
+                  <div className="col-lg-6 col-xl-4">
+                     <div className={`card rounded-0 position-relative`} style={{height:500}}>
+                        <div className={`${style.imgServices} overflow-hidden`}>
+                           <img src="/card5.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                        </div>
+                        <div className="card-body">
+                           <h5 className="card-title mb-3">E-commerce & Online Stores</h5>
+                           <p className="small text-muted mb-4">
+                              I build full-featured online stores, 
+                              including product pages, shopping carts,
+                              and payment integration for seamless transactions.
+                           </p>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
+                           </Link>
+                     </div>
+                  </div>
+                  </div>
+
+                  <div className="col-lg-6 col-xl-4">
+                     <div className={`card rounded-0 position-relative`} style={{height:500}}>
+                        <div className={`${style.imgServices} overflow-hidden`}>
+                           <img src="/card6.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                        </div>
+                        <div className="card-body">
+                           <h5 className="card-title mb-3">Portfolio & Personal Projects</h5>
+                           <p className="small text-muted mb-4">
+                              I create personal and experimental projects to explore new ideas, 
+                              showcase my skills, and implement creative web solutions.
+                           </p>
+                           <Link to="/Projects" className={`${style.linkServices} main-color position-absolute bottom-0 end-0 mx-3 my-4`}>
+                              Check Projects <i className={`${style.iconServices} fa-solid fa-angle-right mx-2`}></i>
                            </Link>
                      </div>
                   </div>

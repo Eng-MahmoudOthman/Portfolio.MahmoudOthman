@@ -8,15 +8,24 @@
 }
 
 .social {
+   position: relative;
+   z-index: 9999;
    width: 30px;
    height: 30px;
    margin: 5px;
    background-color: var(--main-color);
+   transition: var(--main-transition);
    display: flex;
    justify-content: center;
    align-items: center;
+   -webkit-transition: var(--main-transition);
+   -moz-transition: var(--main-transition);
+   -ms-transition: var(--main-transition);
+   -o-transition: var(--main-transition);
 }
-
+.social:hover{
+   background-color: var(--btnHover-color) ;
+}
 
 
 /*Start Media Screen */
