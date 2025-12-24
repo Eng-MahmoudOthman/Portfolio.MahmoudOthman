@@ -36,7 +36,7 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/Store-App_Front-End/" target="_blank">
                                  <div className="col-md-12 ">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE PROJECT" >
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
@@ -84,7 +84,7 @@ export default function Projects() {
                                  </div>
                               </Link>
                               
-                              <Link to=" https://eng-mahmoudothman.github.io/TEMPLATE_THREE_PROJECT/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_THREE_PROJECT/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE THREE PROJECT" >
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
@@ -115,15 +115,15 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to=" https://sarah-mvc-app.onrender.com/register" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12 ">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="SARAH MVC APP PROJECT" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
 
-                              <Link to=" https://eng-mahmoudothman.github.io/free-palestine-Front-End/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/free-palestine-Front-End/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="FREE PALESTINE APP PROJECT" >
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
