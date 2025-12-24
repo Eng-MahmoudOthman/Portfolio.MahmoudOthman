@@ -22,6 +22,7 @@ export default function Projects() {
          <Header title={"Projects"} titleColor={"text-white"} subTitle={"Welcome to explore my Projects"} backgroundURL={{backgroundImage: `url("/backgroundProject.jpg")`}} color={"text-white"}/>
             <CustomTitle title="Projects" />
 
+
             {/* Web Applications  */}
             <section className={`${style.Branding}`}>
                <div className='container'>
@@ -509,7 +510,6 @@ export default function Projects() {
                   </div>
                </div>
             </section>
-
       </Fragment>
    );
 }
