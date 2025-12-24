@@ -1,6 +1,6 @@
 
 .contact {
-   padding: 100px 0px 20px 0px;
+   padding: 60px 0px 20px 0px;
 }
 .contact::before{
    content: "";

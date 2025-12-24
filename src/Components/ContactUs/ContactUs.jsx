@@ -36,7 +36,7 @@
 
 
 
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import style from "./contactUs.module.css";
@@ -52,7 +52,8 @@ export default function ContactUs() {
       setLoading(true) ;
       await axios.post("https://store-alborglab-app-back-end.vercel.app/api/v1/users/portfolio" , values)
       .then(({data})=>{
-         toast.success(data.message);
+         toast.success("تم إرسال بياناتك بنجاح. سيتم التواصل فى اقرب وقت ممكن شكرا لتواصلك معنا ");
+         // toast.success(data.message);
          resetForm()
          setLoading(false) ;
       })
@@ -79,6 +80,14 @@ export default function ContactUs() {
       onSubmit: sendData 
    });
 
+
+   useEffect(() => {
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      });
+   }, [])
+
    return (
       <Fragment>
          <ToastContainer/>
@@ -93,13 +102,16 @@ export default function ContactUs() {
             <div className="text-center">
                <h3 className="fw-bold titleAnimation text-muted">Contact Me</h3>
                <p className="text-muted small titleAnimation">
-                  Welcome to explore my Contact Me.
+                  Welcome to explore my Contact Me. <br/> <br/>
+                  mahmoud.osman440@gmail.com <br/>
+                  01126999142 - 01095677758 <br/>
+                  Cairo - Giza
                </p>
             </div>
 
             <div className='container d-flex justify-content-center align-items-center my-4'>
                <form 
-                  className={`${style.form} my-4 pb-5 pt-2 `} 
+                  className={`${style.form} mb-4 pb-5 pt-2 `} 
                   onSubmit={formik.handleSubmit}
                >
                   <input 

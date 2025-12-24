@@ -26,7 +26,7 @@
 
 
 /* Home Section */
-.home , .portfolio {
+.home , .portfolio , .skills {
    padding: 50px  0px;
    background-color:#f0f0f0 ;
 }
@@ -37,9 +37,14 @@
    width: 80%;
    height:320px ;
    margin: 0 auto;
+   border-radius: 5px;
    background-image: url("../../../public/profile.jpg");
    background-position: center center;
    background-size: cover;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
 }
 .downloadBtn {
    background-color: var(--main-color);
@@ -67,6 +72,42 @@
 
 
 /* Portfolio Section */
+.imgContainer::before {
+   content: "Projects";
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+   padding: 10px 30px;
+   width: 80%;
+   background-color: var(--main-color);
+   opacity: 0;
+   z-index: 1000;
+   text-align: center;
+   transition: var(--main-transition);
+}
+.imgContainer:hover::before {
+   top: calc(50% - 50px);
+   opacity: 0.9;
+}
+.imgContainer::after {
+   content: "Visit Your Projects";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+   padding: 10px 30px;
+   width: 80%;
+   background-color: var(--main-color);
+   opacity: 0;
+   text-align: center;
+   transition: var(--main-transition);
+}
+.imgContainer:hover::after {
+   bottom: calc(50% - 50px);
+   opacity: 0.9;
+}
+
 .image{
    transition: var(--main-transition);
    -webkit-transition: var(--main-transition);
@@ -129,6 +170,19 @@
    -ms-transform: translateX(10px);
    -o-transform: translateX(10px);
 }
+
+
+
+
+
+
+
+
+
+
+/* Skills Section */
+
+
 
 
 

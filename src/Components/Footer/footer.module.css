@@ -4,7 +4,10 @@
    font-size: 8px;
 }
 .sectionFooter {
-   padding: 40px 10px !important;
+   padding: 20px 10px!important;
+}
+.footer {
+   font-size: 14px;
 }
 
 .social {
@@ -35,7 +38,9 @@
       font-size: 10px;
    }
    .sectionFooter {
-      padding: 20px 10px !important;
+      text-align: center;
+      font-weight: bold;
+      padding: 20px 10px 80px 10px !important;
    }
 }
                      /* Small Screen */
