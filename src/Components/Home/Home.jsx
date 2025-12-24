@@ -1,15 +1,13 @@
 import React, { Fragment } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import style from "./home.module.css"
 import CustomTitle from '../CustomTitle/CustomTitle.jsx';
 import useAnimation from '../../Hooks/useAnimation.js';
 import Counter from '../Counter/Counter.jsx';
 import Header from '../Header/Header.jsx';
-import Swal from 'sweetalert2';
 import card1 from "../../Assets/images/card1.jpg"
 
 export default function Home() {
-   const navigate = useNavigate();
    useAnimation(".cardAnimation ", "showAnimation");
    useAnimation(".titleAnimation " , style.fadeUp);
    const title = "Mahmoud Othman" ;
