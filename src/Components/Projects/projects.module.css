@@ -85,6 +85,9 @@
    bottom: calc(50% - 50px);
    opacity: 0.8;
 }
+.imgContainer:hover .linkGithub {
+   bottom: 0px;
+}
 .image{
    transition: var(--main-transition);
    -webkit-transition: var(--main-transition);
@@ -95,6 +98,39 @@
 .image:hover {
    scale: 1.1;
    rotate: 5deg;
+}
+
+.linkGithub {
+   position: absolute;
+   width: 100%;
+   bottom: -50px;
+   left: 0px;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   background-color: rgb(232, 230, 230);
+   padding: 10px 30px;
+   opacity: 0.8;
+   font-weight: bold;
+   z-index: 999;
+   transition: var(--main-transition);
+   -webkit-transition: var(--main-transition);
+   -moz-transition: var(--main-transition);
+   -ms-transition: var(--main-transition);
+   -o-transition: var(--main-transition);
+}
+.link {
+   color: var(--main-color);
+   transition: var(--main-transition);
+   -webkit-transition: var(--main-transition);
+   -moz-transition: var(--main-transition);
+   -ms-transition: var(--main-transition);
+   -o-transition: var(--main-transition);
+}
+.link:hover {
+   color: var(--main-color);
+   filter: brightness(70%);
+   -webkit-filter: brightness(70%);
 }
 
 

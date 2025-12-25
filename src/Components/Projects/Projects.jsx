@@ -40,6 +40,10 @@ export default function Projects() {
                               <Link to="https://eng-mahmoudothman.github.io/Store-App_Front-End/" target="_blank">
                                  <div className="col-md-12 ">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -48,6 +52,10 @@ export default function Projects() {
                               <Link to="https://eng-mahmoudothman.github.io/DANIELS_PROJECT/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="DANIELS PROJECT " >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -57,17 +65,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="https://eng-mahmoudothman.github.io/KERRI_PROJECT/" target="_blank">
+                              <Link to="https://store-alborg-lab-front-end-vercel.vercel.app/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="KERRI PROJECT" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="STORE APP PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_AlborgLab_Front-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_Alborglab_App_Back-End"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_ONE_PROJECT/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE ONE PROJECT " >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -77,17 +93,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_TWO_PROJECT/" target="_blank">
+                              <Link to="https://sm-trend.com/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE TWO PROJECT" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="BOOKING SYSTEM PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_THREE_PROJECT/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/Simple-Crud/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE THREE PROJECT" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="Simple Crud js Native" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Simple-Crud"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -97,8 +121,6 @@ export default function Projects() {
                      </div>
                </div>
             </section>
-
-
 
 
             {/* Frontend Development  */}
@@ -116,9 +138,13 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_ONE_PROJECT/" target="_blank">
                                  <div className="col-md-12 ">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE ONE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/TEMPLATE_ONE_PROJECT"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -127,6 +153,10 @@ export default function Projects() {
                               <Link to="https://eng-mahmoudothman.github.io/free-palestine-Front-End/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="FREE PALESTINE APP PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/https://github.com/Eng-MahmoudOthman/free-palestine-Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -136,17 +166,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_TWO_PROJECT/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE TWO PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/TEMPLATE_TWO_PROJECT"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
 
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/TEMPLATE_THREE_PROJECT/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="TEMPLATE THREE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/TEMPLATE_THREE_PROJECT"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -157,17 +195,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/Store-App_Front-End/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store-App_Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://store-alborg-lab-front-end-vercel.vercel.app/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="STORE APP PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_AlborgLab_Front-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          {/* <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link> */}
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -195,17 +241,25 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12 ">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -215,17 +269,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
 
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -236,18 +298,26 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
 
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -275,17 +345,25 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://sm-trend.com/" target="_blank">
                                  <div className="col-md-12 ">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="BOOKING SYSTEM (TREND)" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://store-alborg-lab-front-end-vercel.vercel.app/" target="_blank">
                                  <div className="col-md-12"  >
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="STORE APP PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_AlborgLab_Front-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_Alborglab_App_Back-End"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -295,17 +373,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://sm-trend.com/#/onlinesystem" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="MEDICAL APPROVALS PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/free-palestine-Front-End/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="FREE PALESTINE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/free-palestine-Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/free-palestine-Back-End"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -316,17 +402,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/Store-App_Front-End/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store-App_Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store-App_Back-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/E-Commerce_Front-End/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE SHOPPING" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/E-Commerce_Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/E-Commerce_app-Back-End-"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -356,17 +450,25 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/Store-App_Front-End/" target="_blank">
                                  <div className="col-md-12 ">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="E-COMMERCE PROJECT" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store-App_Front-End"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store-App_Back-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -376,17 +478,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://store-alborg-lab-front-end-vercel.vercel.app/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="STORE APP ALBORG" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_AlborgLab_Front-End-vercel"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Store_Alborglab_App_Back-End"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -394,20 +504,27 @@ export default function Projects() {
                            </div>
                         </div>
 
-
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://sm-trend.com/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="BOOKING SYSTEM (TREND)" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -436,17 +553,25 @@ export default function Projects() {
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://portfoliomahmoud-othman.vercel.app/" target="_blank">
                                  <div className="col-md-12 ">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="MAHMOUD OTHMAN" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/Portfolio.MahmoudOthman"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
 
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12"  >
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -456,17 +581,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/KERRI_PROJECT/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="KERRI" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/KERRI_PROJECT"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
                               
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
@@ -477,17 +610,25 @@ export default function Projects() {
 
                         <div className="col-md-4">
                            <div  className="row g-4">
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="https://eng-mahmoudothman.github.io/DANIELS_PROJECT/" target="_blank">
                                  <div className="col-md-12">
-                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                    <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="DANIELS" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="https://github.com/Eng-MahmoudOthman/DANIELS_PROJECT"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
                               </Link>
 
-                              <Link to="http://localhost:3000/Store-App_Front-End#/" target="_blank">
+                              <Link to="/" target="_blank">
                                  <div className="col-md-12">
                                     <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`} data-before="PROJECT NAME" >
+                                       <div className={`${style.linkGithub}`}>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Front-End</Link>
+                                          <Link className={`${style.link}`} to="/"><i className="fa-brands fs-6 fa-github"></i>  Back-End</Link>
+                                       </div>
                                        <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                     </div>
                                  </div>
