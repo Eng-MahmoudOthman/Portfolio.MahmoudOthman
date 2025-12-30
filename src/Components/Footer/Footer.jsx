@@ -10,13 +10,6 @@ export default function Footer() {
          <div className="container">
             <div className="row justify-content-between align-items-center ">
                <div className="col-md-6 ">
-                  {/* <div className={`row`}>
-                     <div className="col-md-4">
-                        <img src="/logoMahmoud.png" className="mx-1" width={40} alt="" srcset="" />
-                        ©   Mahmoud Othman  {new Date().getFullYear()} 
-                     </div>
-
-                  </div> */}
                      <div className="mb-4 mb-md-0">
                         <p  className={`${style.footer}  m-0 p-0`}>  Mahmoud Othman  ©  {new Date().getFullYear()} </p>
                         <p  className={`${style.footer}  m-0 p-0`}> Track : Full Stack Developer </p>
@@ -75,6 +68,10 @@ export default function Footer() {
                            </Link>
                      </div>
                   </div>
+               </div>
+
+               <div className='col-md-12 text-center '>
+                  <p className={`${style.spanFooter} m-0`}>© {new Date().getFullYear()} made by Mahmoud Othman</p>
                </div>
             </div>
          </div>

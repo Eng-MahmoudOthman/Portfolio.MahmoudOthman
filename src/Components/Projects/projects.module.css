@@ -32,6 +32,10 @@
 }
 
 
+
+
+
+
 .Graphic {
    background-color:white ;
 }
@@ -48,15 +52,20 @@
 
 
 /* Portfolio Section */
+.imgContainer {
+   border: 2px solid rgb(163, 163, 163);
+   box-shadow: 2px 2px 10px 2px rgb(149, 149, 149) ;
+}
 .imgContainer::before {
    content: attr(data-before);
    position: absolute;
    top: 0;
    left: 50%;
-   width: 80%;
+   width: 70%;
    transform: translate(-50%, 0);
-   padding: 10px 30px;
+   padding: 6px 15px;
    font-weight: bold;
+   font-size: 12px;
    background-color:  rgb(106, 106, 106);
    opacity: 0;
    z-index: 1000;
@@ -64,26 +73,27 @@
    transition: var(--main-transition);
 }
 .imgContainer:hover::before {
-   top: calc(50% - 50px);
-   opacity: 0.8;
+   top: calc(50% - 31px);
+   opacity: 0.9;
 }
 .imgContainer::after {
-   content: "Visit This Project";
+   content: "Demo 🔗";
    position: absolute;
    bottom: 0;
    left: 50%;
-   width: 80%;
+   width: 70%;
    font-weight: bold;
+   font-size: 12px;
    transform: translate(-50%, 0);
-   padding: 10px 30px;
+   padding: 6px 15px;
    background-color: rgb(106, 106, 106);
    opacity: 0;
    text-align: center;
    transition: var(--main-transition);
 }
 .imgContainer:hover::after {
-   bottom: calc(50% - 50px);
-   opacity: 0.8;
+   bottom: calc(50% - 31px);
+   opacity: 0.9;
 }
 .imgContainer:hover .linkGithub {
    bottom: 0px;
@@ -97,9 +107,8 @@
 }
 .image:hover {
    scale: 1.1;
-   rotate: 5deg;
+   /* rotate: 5deg; */
 }
-
 .linkGithub {
    position: absolute;
    width: 100%;
@@ -108,9 +117,7 @@
    display: flex;
    justify-content: space-between;
    text-align: center;
-   background-color: rgb(232, 230, 230);
-   padding: 10px 30px;
-   opacity: 0.8;
+   padding: 10px 20px;
    font-weight: bold;
    z-index: 999;
    transition: var(--main-transition);
@@ -120,18 +127,21 @@
    -o-transition: var(--main-transition);
 }
 .link {
-   color: var(--main-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background-color: rgb(13, 45, 114);
+   border-radius: 5px;
+   padding: 6px 8px;
+   font-size: 9px;
    transition: var(--main-transition);
-   -webkit-transition: var(--main-transition);
-   -moz-transition: var(--main-transition);
-   -ms-transition: var(--main-transition);
-   -o-transition: var(--main-transition);
 }
 .link:hover {
-   color: var(--main-color);
-   filter: brightness(70%);
-   -webkit-filter: brightness(70%);
+   background-color: var(--main-color);
 }
+
+
 
 
 

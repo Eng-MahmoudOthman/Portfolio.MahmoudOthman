@@ -6,6 +6,11 @@ import useAnimation from '../../Hooks/useAnimation.js';
 import Counter from '../Counter/Counter.jsx';
 import Header from '../Header/Header.jsx';
 import card1 from "../../Assets/images/card1.jpg"
+import card2 from "../../Assets/images/card2.jpg"
+import card3 from "../../Assets/images/card3.jpg"
+import card4 from "../../Assets/images/card4.jpg"
+import card5 from "../../Assets/images/card5.jpg"
+import card6 from "../../Assets/images/card6.jpg"
 
 export default function Home() {
    useAnimation(".cardAnimation ", "showAnimation");
@@ -158,20 +163,20 @@ export default function Home() {
             <div className='container'>
                   <div className="text-center">
                      <h3 className="fw-bold titleAnimation text-muted">Portfolio</h3>
-                     <p className="text-muted small titleAnimation">for the love of white</p>
+                     <p className="text-muted small titleAnimation">for the love of Code</p>
                   </div>
                   <Link to="/projects">
                      <div className="row g-4 my-4 ">
                         <div className="col-md-4">
                            <div className="row g-4">
                               <div className="col-md-12">
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
-                                    <img src="/one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="Web Applications" >
+                                    <img src="/home_one.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
                               <div className="col-md-12"  >
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
-                                    <img src="/four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="Frontend Development" >
+                                    <img src="/home_four.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
                            </div>
@@ -180,12 +185,12 @@ export default function Home() {
                         <div className="col-md-4">
                            <div className="row g-4">
                               <div className="col-md-12">
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
-                                    <img src="/two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="Backend Development">
+                                    <img src="/home_two.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
                               <div className="col-md-12">
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="Full Stack Projects">
                                     <img src="/five.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
@@ -196,13 +201,13 @@ export default function Home() {
                         <div className="col-md-4">
                            <div  className="row g-4">
                               <div className="col-md-12">
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
-                                    <img src="/three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="E-commerce & Online Stores">
+                                    <img src="/home_three.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
 
                               <div className="col-md-12">
-                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}>
+                                 <div className={`overflow-hidden rounded  position-relative  ${style.imgContainer}`}  data-before="Portfolio & Personal Projects">
                                     <img src="/six.jpg" className={`${style.image} cardAnimation img-fluid rounded`} alt="" />
                                  </div>
                               </div>
@@ -210,7 +215,6 @@ export default function Home() {
                         </div>
                      </div>
                   </Link>
-
             </div>
          </section>
 
@@ -245,7 +249,7 @@ export default function Home() {
                   <div className="col-lg-6 col-xl-4 cardAnimation">
                      <div className={`card rounded-0 position-relative`} style={{height:500}}>
                         <div className={`${style.imgServices} overflow-hidden`}>
-                           <img src="/card2.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`} alt="title" />
+                           <img src={card2} className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`} alt="title" />
                         </div>
                         <div className="card-body">
                            <h5 className="card-title mb-3">Frontend Development</h5>
@@ -264,7 +268,7 @@ export default function Home() {
                   <div className="col-lg-6 col-xl-4 cardAnimation">
                      <div className={`card rounded-0 position-relative`} style={{height:500}}>
                         <div className={`${style.imgServices} overflow-hidden`}>
-                           <img src="/card3.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                           <img src={card3} className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
                         </div>
                         <div className="card-body">
                            <h5 className="card-title mb-3">Backend Development</h5>
@@ -282,7 +286,7 @@ export default function Home() {
                   <div className="col-lg-6 col-xl-4 cardAnimation">
                      <div className={`card rounded-0 position-relative`} style={{height:500}}>
                         <div className={`${style.imgServices} overflow-hidden`}>
-                           <img src="/card4.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                           <img src={card4} className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
                         </div>
                         <div className="card-body">
                            <h5 className="card-title mb-3">Full Stack Projects</h5>
@@ -300,7 +304,7 @@ export default function Home() {
                   <div className="col-lg-6 col-xl-4 cardAnimation">
                      <div className={`card rounded-0 position-relative`} style={{height:500}}>
                         <div className={`${style.imgServices} overflow-hidden`}>
-                           <img src="/card5.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                           <img src={card5} className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
                         </div>
                         <div className="card-body">
                            <h5 className="card-title mb-3">E-commerce & Online Stores</h5>
@@ -319,7 +323,7 @@ export default function Home() {
                   <div className="col-lg-6 col-xl-4 cardAnimation">
                      <div className={`card rounded-0 position-relative`} style={{height:500}}>
                         <div className={`${style.imgServices} overflow-hidden`}>
-                           <img src="/card6.jpg" className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
+                           <img src={card6} className={`${style.photoService}  rounded-0 w-100 h-100 img-fluid object-fit-cover`}alt="title" />
                         </div>
                         <div className="card-body">
                            <h5 className="card-title mb-3">Portfolio & Personal Projects</h5>

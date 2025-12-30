@@ -29,6 +29,9 @@
 .social:hover{
    background-color: var(--btnHover-color) ;
 }
+.spanFooter {
+   font-size: 10px;
+}
 
 
 /*Start Media Screen */

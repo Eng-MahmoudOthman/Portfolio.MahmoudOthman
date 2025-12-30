@@ -4,7 +4,7 @@
    opacity: 0;
    transform: translateX(-40px);
    animation: fadeUp 3.6s ease forwards;
-   -webkit-animation: fadeUp 3.6s ease forwards;
+   -webkit-animation: fadeUp 3.0s ease forwards;
    -webkit-transform: translateX(-40px);
    -moz-transform: translateX(-40px);
    -ms-transform: translateX(-40px);
@@ -71,9 +71,10 @@
 
 
 
+
 /* Portfolio Section */
 .imgContainer::before {
-   content: "Projects";
+   content: attr(data-before);
    position: absolute;
    top: 0;
    left: 50%;
