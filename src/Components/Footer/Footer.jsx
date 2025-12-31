@@ -11,12 +11,11 @@ export default function Footer() {
             <div className="row justify-content-between align-items-center ">
                <div className="col-md-6 ">
                      <div className="mb-4 mb-md-0">
-                        <p  className={`${style.footer}  m-0 p-0`}>  Mahmoud Othman  ©  {new Date().getFullYear()} </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> Track : Full Stack Developer </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> Phone : 01126999142 - 01095677758 </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> WhatsApp : 01126999142 </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> Email : mahmoud.osman440@gmail.com </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> Address : Cairo - Giza </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Track     :</strong> Full Stack Developer </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Phone     : </strong> 01126999142 - 01095677758 </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>WhatsApp  :</strong> 01126999142 </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Email     : </strong>  mahmoud.osman440@gmail.com </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Address   :</strong>  Cairo - Giza </p>
                      </div>
                </div>
 
@@ -71,7 +70,7 @@ export default function Footer() {
                </div>
 
                <div className='col-md-12 text-center '>
-                  <p className={`${style.spanFooter} m-0`}>© {new Date().getFullYear()} made by Mahmoud Othman</p>
+                  <p className={`${style.spanFooter} m-0`}>© {new Date().getFullYear()} Made by Mahmoud Othman – Creativity, code, and commitment</p>
                </div>
             </div>
          </div>

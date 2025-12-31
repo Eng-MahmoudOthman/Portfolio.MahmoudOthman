@@ -60,7 +60,7 @@
          "status": "Completed",
          "duration": "151 Days"
       }
-   ],
+   ] ,
    "front": [
       {
          "slug":"Template-One-Project",
@@ -89,7 +89,7 @@
          "backUrl": "",
          "demoUrl": "https://eng-mahmoudothman.github.io/DANIELS_PROJECT/",
          "imageUrl": "/home_one.jpg",
-         "description": "Personal Portfolio Website showcasing Mahmoud Othman’s professional profile. The website includes team members, services offered (Web Design, Web Development, App Development), skills with progress bars, client testimonials with star ratings, and a contact form. Features responsive navigation, interactive elements, and social media integration. Built with semantic HTML, CSS, and JavaScript for interactivity, with attention to cross-browser consistency.",
+         "description": "Personal Portfolio Website showcasing  DANIELS’s professional profile. The website includes team members, services offered (Web Design, Web Development, App Development), skills with progress bars, client testimonials with star ratings, and a contact form. Features responsive navigation, interactive elements, and social media integration. Built with semantic HTML, CSS, and JavaScript for interactivity, with attention to cross-browser consistency.",
          "skills_Front":["HTML5","CSS3","JavaScript","Normalize.css","Google Fonts","Font Awesome","Media queries","Flexible layout","Interactive navigation menu","Scroll-to-top button","Progress bars","Testimonial stars","Form handling (Contact Form)","Social media integration"] ,
          "skills_Back":[] ,
          "libraries": ["Normalize.css","Font Awesome","Google Fonts"] ,
@@ -162,7 +162,7 @@
          "status": "Completed",
          "duration": "6 Days"
       }
-   ],
+   ] ,
    "back": [
       {
          "slug":"E-Commerce-Project-Back",
@@ -224,7 +224,7 @@
          "status": "Completed",
          "duration": "90 Days"
       }
-   ],
+   ] ,
    "fullStack": [
       {
          "slug":"Store-App-Project",
@@ -286,7 +286,7 @@
          "status": "Completed - Production",
          "duration": "174 Days"
       }
-   ],
+   ] ,
    "onlineStore": [
       {
          "slug":"Store-App-Project",
@@ -348,7 +348,7 @@
          "status": "Completed - Production",
          "duration": "174 Days"
       }
-   ],
+   ] ,
    "portfolio": [
       {
          "slug":"Mahmoud-Othman-Project",
@@ -357,14 +357,14 @@
          "backUrl": "",
          "demoUrl": "https://portfoliomahmoud-othman.vercel.app/",
          "imageUrl": "/home_one.jpg",
-         "description": "Creative portfolio template",
-         "skills_Front":[] ,
+         "description": "Development of a modern, fully responsive personal portfolio website built using React. The website showcases professional projects, skills, services, and contact information with smooth navigation and a clean UI design.The platform allows visitors to contact the site owner directly via Email (EmailJS integration) or WhatsApp, making communication simple and seamless.",
+         "skills_Front":["React.js (SPA architecture)","HTML5 / CSS3 / JavaScript (ES6+)","Bootstrap 5","React-Bootstrap","Custom CSS","Responsive design & media queries","Formik","Yup","EmailJS (Send emails directly from client)","WhatsApp deep-link integration","Axios (API handling)","React-Query (Data management & caching)","Font Awesome Icons","Google Fonts","React-Toastify (notifications)","SweetAlert2 (dialogs)","React-Helmet"] ,
          "skills_Back":[] ,
-         "libraries":[] ,
+         "libraries":["React","React Router DOM","React-Bootstrap","Bootstrap","Axios","React-Query","EmailJS Browser SDK","Font Awesome","React-Toastify","SweetAlert2","Formik","Yup","React-Helmet","Normalize.css","gh-pages (deployment)"] ,
          "database":[] ,
          "security":[] ,
-         "feature": [],
-         "role": "Frontend Developer",
+         "feature":  ["Landing / Home Section - Intro section with name, title, and call-to-action buttons","About Section - Professional bio and personal introduction","Skills Section - Clear presentation of technical skills and tools","Services Section - Overview of provided services with icon-based layout","Projects / Portfolio Section - Showcasing completed work with descriptions and links","Contact Section - Email form powered by EmailJS, Direct WhatsApp contact button, Toast notifications for form status","Navigation & UI - Fully responsive layout, Smooth scrolling between sections, Clean modern design using Bootstrap & React-Bootstrap","Validation & UX - Form validation using Formik & Yup, Error handling & user-friendly messages"] ,
+         "role": "Designed and developed the entire website structure and UI.Implemented reusable React components and routing.Integrated EmailJS to allow sending messages directly from the site.Added WhatsApp contact functionality with one-click messaging.Applied form validation and user feedback messages.Ensured mobile-first responsive design.Deployed the project using GitHub Pages.",
          "category": "portfolio",
          "year": 2025,
          "status": "Completed",
@@ -372,23 +372,23 @@
       } ,
       {
          "slug":"Daniels-Project",
-         "name": "DANIELS PORTFOLIO PROJECT",
+         "name": "DANIELS PROJECT",
          "frontUrl": "https://github.com/Eng-MahmoudOthman/DANIELS_PROJECT",
          "backUrl": "",
          "demoUrl": "https://eng-mahmoudothman.github.io/DANIELS_PROJECT/",
          "imageUrl": "/home_one.jpg",
-         "description": "Creative portfolio template",
-         "skills_Front":[] ,
+         "description": "Personal Portfolio Website showcasing DANIELS’s professional profile. The website includes team members, services offered (Web Design, Web Development, App Development), skills with progress bars, client testimonials with star ratings, and a contact form. Features responsive navigation, interactive elements, and social media integration. Built with semantic HTML, CSS, and JavaScript for interactivity, with attention to cross-browser consistency.",
+         "skills_Front":["HTML5","CSS3","JavaScript","Normalize.css","Google Fonts","Font Awesome","Media queries","Flexible layout","Interactive navigation menu","Scroll-to-top button","Progress bars","Testimonial stars","Form handling (Contact Form)","Social media integration"] ,
          "skills_Back":[] ,
-         "libraries":[] ,
+         "libraries": ["Normalize.css","Font Awesome","Google Fonts"] ,
          "database":[] ,
          "security":[] ,
          "feature": [],
-         "role": "Frontend Developer",
+         "role": "Designing and developing a full creative agency website from scratch.Developing main sections: Services, Portfolio, About, and Contact.Creating an interactive user interface with Font Awesome icons, interactive buttons, and Google Fonts.Enhancing user experience with a responsive and toggleable navigation menu (Hamburger Menu).Integrating social media and email links interactively.",
          "category": "portfolio",
-         "year": 2025,
+         "year": 2024,
          "status": "Completed",
-         "duration": "7 Days"
+         "duration": "5 Days"
       } ,
       {
          "slug":"Kerri-Project",

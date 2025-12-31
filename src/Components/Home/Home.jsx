@@ -5,18 +5,14 @@ import CustomTitle from '../CustomTitle/CustomTitle.jsx';
 import useAnimation from '../../Hooks/useAnimation.js';
 import Counter from '../Counter/Counter.jsx';
 import Header from '../Header/Header.jsx';
-import card1 from "../../Assets/images/card1.jpg"
-import card2 from "../../Assets/images/card2.jpg"
-import card3 from "../../Assets/images/card3.jpg"
-import card4 from "../../Assets/images/card4.jpg"
-import card5 from "../../Assets/images/card5.jpg"
-import card6 from "../../Assets/images/card6.jpg"
+
 
 export default function Home() {
    useAnimation(".cardAnimation ", "showAnimation");
    useAnimation(".titleAnimation " , style.fadeUp);
    const title = "Mahmoud Othman" ;
    const typing = [
+      "Full Stack Developer" ,
       "MERN Stack Developer" ,
       "Front-End Developer | UI/UX & React.js" , 
       "Back-End Developer | Node.js & Architecture" ,
@@ -163,7 +159,7 @@ export default function Home() {
             <div className='container'>
                   <div className="text-center">
                      <h3 className="fw-bold titleAnimation text-muted">Portfolio</h3>
-                     <p className="text-muted small titleAnimation">for the love of Code</p>
+                     <p className="text-muted small titleAnimation">My Work & Projects – Showcasing Real-World Applications, Skills, and Innovative Solutions.</p>
                   </div>
                   <Link to="/projects">
                      <div className="row g-4 my-4 ">
