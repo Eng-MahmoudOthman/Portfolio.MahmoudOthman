@@ -190,7 +190,7 @@
          "frontUrl": "",
          "backUrl": "https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1",
          "demoUrl": "https://sm-trend.com/",
-         "imageUrl": "/home_one.jpg",
+         "imageUrl": "/home_three.jpg",
          "description": "A production-ready backend API for an online medical diagnostics platform that allows patients to book lab tests and radiology services, submit online authorization requests, pay securely, and receive digital invoices and QR-coded confirmations.The system supports both online processing and in-branch verification, enabling patients to complete payment online and then visit any branch to finalize the service or collect results.The backend is built with Node.js, Express, and MongoDB, following a modular REST architecture with a strong focus on security, validation, and scalability.It includes secure authentication, Google OAuth login, session handling, real-time status updates via Socket.io, PDF invoice generation, email notifications, QR code validation, and administrative reporting tools.",
          "skills_Front":[] ,
          "skills_Back":["Node.js","Express.js","RESTful API architecture","Modular, scalable code structure","JWT authentication","Google OAuth (passport-google-oauth20)","Session handling (express-session)","Secure password hashing (bcrypt)","Online payment workflow","PDF invoice generation using pdfkit & puppeteer","QR code generation (qrcode)","UUID / NanoID for secure tracking","Nodemailer — send booking & invoice emails"] ,
