@@ -416,7 +416,7 @@ export default function Home() {
 
                               <div className="d-flex justify-content-start align-items-center">
                                  <div className={`${style.imgTestimonials} overflow-hidden mx-2`}>
-                                    <img src="/personal1.jpg" className="w-100 h-100" alt="" />
+                                    <img src="/testimonial1.jpg" className="w-100 h-100" alt="" />
                                  </div>
 
                                  <div className="mx-2">
@@ -441,7 +441,7 @@ export default function Home() {
 
                               <div className="d-flex justify-content-start align-items-center">
                                  <div className={`${style.imgTestimonials} overflow-hidden mx-2`}>
-                                    <img src="/personal2.jpg" className="w-100 h-100" alt="" />
+                                    <img src="/testimonial2.jpg" className="w-100 h-100" alt="" />
                                  </div>
 
                                  <div className="mx-2">
@@ -468,7 +468,7 @@ export default function Home() {
 
                               <div className="d-flex justify-content-start align-items-center">
                                  <div className={`${style.imgTestimonials} overflow-hidden mx-2`}>
-                                    <img src="/personal3.jpg" className="w-100 h-100" alt="" />
+                                    <img src="/testimonial3.png" className="w-100 h-100" alt="" />
                                  </div>
 
                                  <div className="mx-2">
