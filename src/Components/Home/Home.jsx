@@ -105,7 +105,6 @@ export default function Home() {
          "Using Multer (Upload Files)" ,
          "Using Cloud External Data" ,
          "Next.js Basics",
-
       ],
    };
 
