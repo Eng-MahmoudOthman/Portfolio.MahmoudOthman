@@ -21,26 +21,6 @@
          "duration": "152 Days"
       } ,
       {
-         "slug":"Booking-App-Project",
-         "name": "BOOKING SYSTEM PROJECT",
-         "frontUrl": "https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1",
-         "backUrl": "https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1",
-         "demoUrl": "https://sm-trend.com/",
-         "imageUrl": "/trend.jpg",
-         "description": "SmartTrend is a full-stack production-ready medical booking platform designed to facilitate medical tests and radiology bookings across multiple lab branches, including AlBorg, ElFa, First Lab, and Royal Lab centers. The platform allows patients to book tests and radiology services online, pay through integrated invoices (gateway), and select the nearest branch for sample collection. Branches can approve bookings online, manage patient services, and generate PDF invoices. Users can register accounts, view all past orders, choose payment methods (cash or card), and print receipts, making the entire medical booking and billing process seamless, automated, and traceable." ,
-         "skills_Front":["Component-based architecture","React Router v6 for navigation","React Query for data fetching & caching","Axios for API calls","Form handling with Formik + Yup","Bootstrap / React-Bootstrap for responsive UI","Recharts for analytics","Modals, toast notifications, alerts","QR code rendering for orders"] ,
-         "skills_Back":["REST API design and implementation","MVC architecture","Middleware & authentication","Session & JWT-based auth","File uploads with Multer & Cloudinary","PDF generation with PDFKit / Puppeteer","Excel exports with ExcelJS / XLSX","QR code generation"] ,
-         "libraries":["react","react-dom","react-router-dom","axios","react-query","formik + yup","bootstrap / react-bootstrap","recharts","react-toastify / react-hot-toast","socket.io-client","react-qr-code","react-modal","react-loader-spinner","lodash.debounce","express","mongoose","bcrypt","jsonwebtoken","passport + passport-google-oauth20","multer","cloudinary","pdfkit / puppeteer","exceljs / xlsx","qrcode","slugify","uuid","dotenv","cors / helmet / hpp / xss-clean / express-mongo-sanitize","express-rate-limit"] ,
-         "database":["Patient accounts & authentication","Orders and bookings schema","Multi-branch management","Payment tracking","Test/radiology services catalog","Data validation and indexing","Relation modeling for user orders and branches"] ,
-         "security": ["JWT authentication","Password hashing (bcrypt)","CORS configuration","Helmet secure HTTP headers","Rate-limiting","NoSQL injection prevention","XSS protection","HTTP Parameter pollution prevention","Input validation using Joi","Request sanitization"] ,
-         "feature": ["Secure Authentication & Authorization","Multi-branch management","Online booking for tests & radiology services","Online payments via integrated payment gateway by fawaterak","PDF invoice generation","Order history tracking","Online approval workflow for lab branches","Print invoices","Account creation & login","Notifications for order status","Real-time updates via Socket.io","Responsive design for web and mobile","Offline detection & handling"],
-         "role": "I developed the platform end-to-end, including backend services, database design, API endpoints, frontend integration, payment integration, authentication, PDF generation, and real-time communication between users and lab branches.I implemented security best practices, efficient data handling, and optimized the system for production.",
-         "category": "webApp",
-         "year": 2025,
-         "status": "Completed - Production",
-         "duration": "174 Days"
-      },
-      {
          "slug":"E-Commerce-Project",
          "name": "E-COMMERCE PROJECT FULL-STACK",
          "frontUrl": "https://github.com/Eng-MahmoudOthman/Store-App_Front-End",
@@ -185,26 +165,6 @@
          "duration": "81 Days"
       } ,
       {
-         "slug":"Booking-System-Back",
-         "name": "BOOKING SYSTEM PROJECT BACK-END",
-         "frontUrl": "",
-         "backUrl": "https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1",
-         "demoUrl": "https://sm-trend.com/",
-         "imageUrl": "/home_three.jpg",
-         "description": "A production-ready backend API for an online medical diagnostics platform that allows patients to book lab tests and radiology services, submit online authorization requests, pay securely, and receive digital invoices and QR-coded confirmations.The system supports both online processing and in-branch verification, enabling patients to complete payment online and then visit any branch to finalize the service or collect results.The backend is built with Node.js, Express, and MongoDB, following a modular REST architecture with a strong focus on security, validation, and scalability.It includes secure authentication, Google OAuth login, session handling, real-time status updates via Socket.io, PDF invoice generation, email notifications, QR code validation, and administrative reporting tools.",
-         "skills_Front":[] ,
-         "skills_Back":["Node.js","Express.js","RESTful API architecture","Modular, scalable code structure","JWT authentication","Google OAuth (passport-google-oauth20)","Session handling (express-session)","Secure password hashing (bcrypt)","Online payment workflow","PDF invoice generation using pdfkit & puppeteer","QR code generation (qrcode)","UUID / NanoID for secure tracking","Nodemailer — send booking & invoice emails"] ,
-         "libraries":["Node.js","Express.js","MongoDB","Mongoose","JWT authentication","passport-google-oauth20","express-session","bcrypt","Helmet","express-rate-limit","express-mongo-sanitize","xss-clean","hpp","CORS","dotenv","Multer","Cloudinary","pdfkit","puppeteer","qrcode","UUID","NanoID","Nodemailer","Socket.io","Joi","@joi/date","xlsx","exceljs","Axios","Slugify","Path"] ,
-         "database":["MongoDB + Mongoose","Schema design for users","Schema design for bookings","Schema design for medical services","Schema design for approvals","Schema design for payment records","Schema design for invoices"] ,
-         "security":["Helmet — secure HTTP headers","express-rate-limit — brute-force protection","express-mongo-sanitize — prevent NoSQL injection","xss-clean — protect against XSS","JWT authentication","Google OAuth (passport-google-oauth20)","Session handling (express-session)","Secure password hashing (bcrypt)","hpp — prevent parameter pollution","CORS configuration","Environment configs via dotenv"] ,
-         "feature":  ["User registration & secure login","Google social login","Book lab tests & radiology services","Online approval submission","Online payments","Digital PDF invoice","QR-based service verification","Email confirmation","Real-time approval updates","Exportable reports (Excel / PDF)","Admin management tools","Secure, production-grade backend","Designed the system architecture and database models","Developed RESTful APIs for bookings, approvals, payments, and results","Implemented authentication, security middleware, and access control","Integrated digital invoicing, QR validation, and email notifications","Built real-time authorization status updates using Socket.io","Implemented admin tools for reports & analytics exports","Applied high-level security & performance best-practices"] ,
-         "role": "Backend Developer — System Architecture & API Development",
-         "category": "back",
-         "year": 2024,
-         "status": "Completed - Production",
-         "duration": "110 Days"
-      },
-      {
          "slug":"Store-App-Back",
          "name": "STORE APP PROJECT BACK-END",
          "frontUrl": "",
@@ -265,26 +225,6 @@
          "year": 2025,
          "status": "Completed",
          "duration": "151 Days"
-      },
-      {
-         "slug":"Booking-App-Project",
-         "name": "BOOKING SYSTEM PROJECT",
-         "frontUrl": "https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1",
-         "backUrl": "https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1",
-         "demoUrl": "https://sm-trend.com/",
-         "imageUrl": "/trend.jpg",
-         "description": "SmartTrend is a full-stack production-ready medical booking platform designed to facilitate medical tests and radiology bookings across multiple lab branches, including AlBorg, ElFa, First Lab, and Royal Lab centers. The platform allows patients to book tests and radiology services online, pay through integrated invoices (gateway), and select the nearest branch for sample collection. Branches can approve bookings online, manage patient services, and generate PDF invoices. Users can register accounts, view all past orders, choose payment methods (cash or card), and print receipts, making the entire medical booking and billing process seamless, automated, and traceable." ,
-         "skills_Front":["Component-based architecture","React Router v6 for navigation","React Query for data fetching & caching","Axios for API calls","Form handling with Formik + Yup","Bootstrap / React-Bootstrap for responsive UI","Recharts for analytics","Modals, toast notifications, alerts","QR code rendering for orders"] ,
-         "skills_Back":["REST API design and implementation","MVC architecture","Middleware & authentication","Session & JWT-based auth","File uploads with Multer & Cloudinary","PDF generation with PDFKit / Puppeteer","Excel exports with ExcelJS / XLSX","QR code generation"] ,
-         "libraries":["react","react-dom","react-router-dom","axios","react-query","formik + yup","bootstrap / react-bootstrap","recharts","react-toastify / react-hot-toast","socket.io-client","react-qr-code","react-modal","react-loader-spinner","lodash.debounce","express","mongoose","bcrypt","jsonwebtoken","passport + passport-google-oauth20","multer","cloudinary","pdfkit / puppeteer","exceljs / xlsx","qrcode","slugify","uuid","dotenv","cors / helmet / hpp / xss-clean / express-mongo-sanitize","express-rate-limit"] ,
-         "database":["Patient accounts & authentication","Orders and bookings schema","Multi-branch management","Payment tracking","Test/radiology services catalog","Data validation and indexing","Relation modeling for user orders and branches"] ,
-         "security": ["JWT authentication","Password hashing (bcrypt)","CORS configuration","Helmet secure HTTP headers","Rate-limiting","NoSQL injection prevention","XSS protection","HTTP Parameter pollution prevention","Input validation using Joi","Request sanitization"] ,
-         "feature": ["Secure Authentication & Authorization","Multi-branch management","Online booking for tests & radiology services","Online payments via integrated payment gateway by fawaterak","PDF invoice generation","Order history tracking","Online approval workflow for lab branches","Print invoices","Account creation & login","Notifications for order status","Real-time updates via Socket.io","Responsive design for web and mobile","Offline detection & handling"],
-         "role": "I developed the platform end-to-end, including backend services, database design, API endpoints, frontend integration, payment integration, authentication, PDF generation, and real-time communication between users and lab branches.I implemented security best practices, efficient data handling, and optimized the system for production.",
-         "category": "webApp",
-         "year": 2025,
-         "status": "Completed - Production",
-         "duration": "174 Days"
       }
    ] ,
    "onlineStore": [
@@ -327,26 +267,6 @@
          "year": 2025,
          "status": "Completed",
          "duration": "151 Days"
-      },
-      {
-         "slug":"Booking-App-Project",
-         "name": "BOOKING SYSTEM PROJECT",
-         "frontUrl": "https://github.com/Eng-MahmoudOthman/Trend_Front-End_v1",
-         "backUrl": "https://github.com/Eng-MahmoudOthman/Trend_Back-End_v1",
-         "demoUrl": "https://sm-trend.com/",
-         "imageUrl": "/trend.jpg",
-         "description": "SmartTrend is a full-stack production-ready medical booking platform designed to facilitate medical tests and radiology bookings across multiple lab branches, including AlBorg, ElFa, First Lab, and Royal Lab centers. The platform allows patients to book tests and radiology services online, pay through integrated invoices (gateway), and select the nearest branch for sample collection. Branches can approve bookings online, manage patient services, and generate PDF invoices. Users can register accounts, view all past orders, choose payment methods (cash or card), and print receipts, making the entire medical booking and billing process seamless, automated, and traceable." ,
-         "skills_Front":["Component-based architecture","React Router v6 for navigation","React Query for data fetching & caching","Axios for API calls","Form handling with Formik + Yup","Bootstrap / React-Bootstrap for responsive UI","Recharts for analytics","Modals, toast notifications, alerts","QR code rendering for orders"] ,
-         "skills_Back":["REST API design and implementation","MVC architecture","Middleware & authentication","Session & JWT-based auth","File uploads with Multer & Cloudinary","PDF generation with PDFKit / Puppeteer","Excel exports with ExcelJS / XLSX","QR code generation"] ,
-         "libraries":["react","react-dom","react-router-dom","axios","react-query","formik + yup","bootstrap / react-bootstrap","recharts","react-toastify / react-hot-toast","socket.io-client","react-qr-code","react-modal","react-loader-spinner","lodash.debounce","express","mongoose","bcrypt","jsonwebtoken","passport + passport-google-oauth20","multer","cloudinary","pdfkit / puppeteer","exceljs / xlsx","qrcode","slugify","uuid","dotenv","cors / helmet / hpp / xss-clean / express-mongo-sanitize","express-rate-limit"] ,
-         "database":["Patient accounts & authentication","Orders and bookings schema","Multi-branch management","Payment tracking","Test/radiology services catalog","Data validation and indexing","Relation modeling for user orders and branches"] ,
-         "security": ["JWT authentication","Password hashing (bcrypt)","CORS configuration","Helmet secure HTTP headers","Rate-limiting","NoSQL injection prevention","XSS protection","HTTP Parameter pollution prevention","Input validation using Joi","Request sanitization"] ,
-         "feature": ["Secure Authentication & Authorization","Multi-branch management","Online booking for tests & radiology services","Online payments via integrated payment gateway by fawaterak","PDF invoice generation","Order history tracking","Online approval workflow for lab branches","Print invoices","Account creation & login","Notifications for order status","Real-time updates via Socket.io","Responsive design for web and mobile","Offline detection & handling"],
-         "role": "I developed the platform end-to-end, including backend services, database design, API endpoints, frontend integration, payment integration, authentication, PDF generation, and real-time communication between users and lab branches.I implemented security best practices, efficient data handling, and optimized the system for production.",
-         "category": "webApp",
-         "year": 2025,
-         "status": "Completed - Production",
-         "duration": "174 Days"
       }
    ] ,
    "portfolio": [

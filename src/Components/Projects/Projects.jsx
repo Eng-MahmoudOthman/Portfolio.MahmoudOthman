@@ -69,7 +69,7 @@ export default function Projects() {
                         <h3 className="fw-bold titleAnimation text-muted">Frontend Development</h3>
                         <p className="text-muted small titleAnimation">
                            I create responsive and visually appealing 
-                           user interfaces using React.js, HTML, CSS, and JavaScript, 
+                           user interfaces using React.js, Next.js, HTML, CSS, and JavaScript, 
                            focusing on usability and performance.
                         </p>
                      </div>
