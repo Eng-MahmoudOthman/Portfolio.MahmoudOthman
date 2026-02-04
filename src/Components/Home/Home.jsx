@@ -28,6 +28,7 @@ export default function Home() {
          "CSS3",
          "JavaScript (ES6)",
          "React.js",
+         "Next.js" ,
          "React Router",
          "Context API",
          "Bootstrap",
