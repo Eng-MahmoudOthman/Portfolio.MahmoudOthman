@@ -105,7 +105,7 @@ export default function ContactUs() {
                   Welcome to explore my Contact Me. <br/> <br/>
                   mahmoud.osman440@gmail.com <br/>
                   01126999142 - 01095677758 <br/>
-                  Cairo - Giza
+                  Egypt - Giza
                </p>
             </div>
 

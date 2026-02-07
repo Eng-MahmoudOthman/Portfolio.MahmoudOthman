@@ -15,7 +15,7 @@ export default function Footer() {
                         <p  className={`${style.footer}  m-0 p-0`}> <strong>Phone     : </strong> 01126999142 - 01095677758 </p>
                         <p  className={`${style.footer}  m-0 p-0`}> <strong>WhatsApp  :</strong> 01126999142 </p>
                         <p  className={`${style.footer}  m-0 p-0`}> <strong>Email     : </strong>  mahmoud.osman440@gmail.com </p>
-                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Address   :</strong>  Cairo - Giza </p>
+                        <p  className={`${style.footer}  m-0 p-0`}> <strong>Address   :</strong>  Egypt - Giza </p>
                      </div>
                </div>
 
